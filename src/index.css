@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Montserrat', cursive;
+  background-color: #f3f4f6;
+}
+/* Scrollbar Track */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px; /* Horizontal scrollbar height */
+  background: transparent; /* Background of the entire scrollbar */
+  height: 7px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #8180808b; /* Adjust for light or dark mode */
+  border-radius: 8px; /* Rounded edges */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #8180808b; /* Darker on hover */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: inherit; /* Match the background of the table/page */
+}
+
+.custom-swiper {
+  overflow: visible !important;
+}
